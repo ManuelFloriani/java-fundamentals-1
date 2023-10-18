@@ -21,5 +21,7 @@ public class PasswordGenerator {
         int newYear = generalScan.nextInt();
         int newSomma = newDay + newMonth + newYear;
         System.out.println("Ecco la tua nuova e formidabile password: " + newName + "-" + newSurname + "-" + newColor + "-" + newSomma);
+
+        generalScan.close();
     }
 }
