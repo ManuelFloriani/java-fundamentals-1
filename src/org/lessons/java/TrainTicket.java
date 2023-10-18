@@ -4,12 +4,11 @@ import java.util.Scanner;
 
 public class TrainTicket {
     public static void main(String[] args) {
-        Scanner kilometersScan = new Scanner(System.in);
-        Scanner ageScan = new Scanner(System.in);
+        Scanner generalScan = new Scanner(System.in);
         System.out.println("Quanti chilometri devi percorrere?");
-        int kilometersToTravel = kilometersScan.nextInt();
+        int kilometersToTravel = generalScan.nextInt();
         System.out.println("Quanti anni hai?");
-        int userAge = ageScan.nextInt();
+        int userAge = generalScan.nextInt();
         double fixedPrice = 0.21;
         double partialTicketPrice = fixedPrice * kilometersToTravel;
         System.out.println("Il prezzo prima degli sconti è " + partialTicketPrice + "€");
@@ -23,6 +22,6 @@ public class TrainTicket {
         } else {
             System.out.println("Il prezzo del tuo biglietto è " + partialTicketPrice + "€");
         }
-
+        generalScan.close();
     }
 }
